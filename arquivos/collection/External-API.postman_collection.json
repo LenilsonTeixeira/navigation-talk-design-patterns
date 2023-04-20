@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "9880d495-2b68-4371-869b-94504988a5b4",
+		"name": "External-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/situacao-cadastral?cpf=07032245650&dataNascimento=26/04/1991",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/situacao-cadastral?cpf=08322308043&dataNascimento=26/04/1991",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"situacao-cadastral"
+					],
+					"query": [
+						{
+							"key": "cpf",
+							"value": "08322308043"
+						},
+						{
+							"key": "dataNascimento",
+							"value": "26/04/1991"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/clientes/07032245650",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/clientes/08322308043",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes",
+						"08322308043"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/score/07032245650",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/score/08322308043",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"score",
+						"08322308043"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/analise-credito",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"cpf\": \"08322308043\",\n    \"nome\": \"Lenilson Teixeira\",\n    \"dataNascimento\": \"26/04/1991\",\n    \"score\": 900\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/analise-credito",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"analise-credito"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

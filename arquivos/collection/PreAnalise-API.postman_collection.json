@@ -1,0 +1,29 @@
+{
+	"info": {
+		"_postman_id": "a44b73d5-a613-4061-938b-e6a4efac1af0",
+		"name": "PreAnalise-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "PreAnalise",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/pre-analise/08322308043",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"pre-analise",
+						"08322308043"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
